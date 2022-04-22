@@ -1,3 +1,7 @@
+require_relative './board'
+require_relative './player'
+require_relative './position'
+
 class Game
   def initialize(name)
     return unless name == 'tictac'
