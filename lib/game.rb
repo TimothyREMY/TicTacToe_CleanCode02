@@ -41,7 +41,7 @@ class Game
   def ask(position, player_name)
     until @board.valid?(position)
       puts "#{player_name} : quelle case veux-tu cocher ?"
-      position.from_string(gets.chomp.downcase)
+      position.from_string($stdin.gets.chomp.downcase)
     end
   end
 
