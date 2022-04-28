@@ -66,6 +66,6 @@ class Game
   end
 
   def print_endgame
-    puts 'Match nul ! Bye' if someone_winning?(@board.board)
+    puts 'Match nul ! Bye' unless someone_winning?(@board.board)
   end
 end
