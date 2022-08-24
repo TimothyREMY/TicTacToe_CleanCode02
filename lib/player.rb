@@ -1,10 +1,13 @@
 class Player
+  require 'pry'
+
   @@count ||= 0
 
   attr_reader :name, :mark
 
   def initialize
     raise 'Seulement deux joueurs peuvent jouer en même temps !' if @@count >= 2
+    
 
     puts ''
     puts "Donner le nom du joueur #{@@count + 1}"
